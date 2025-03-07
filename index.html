@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,34 +6,54 @@
     <title>WDD 131 – Dynamic Web Fundamentals - Yamsir Hernandez</title>
     <meta name="description" content="Yamsir Hernandez's home page for WDD 131 course">
     <meta name="author" content="Yamsir Hernandez">
+    <script src="scripts/getdates.js" defer></script>
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>WDD 131 – Dynamic Web Fundamentals - Yamsir Hernandez</h1>
         <nav>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="https://www.linkedin.com/in/yamsirhp/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instructure.com/canvas/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/28?lang=eng&id=p16#p16" target="_blank">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h2>Titulo 2</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis cumque libero aperiam inventore dolorum saepe asperiores, facilis eaque corporis facere odit neque soluta mollitia, corrupti sequi adipisci. Quod, quidem ratione.</p>
+    <main class="cards">
+        <h2>About Me</h2>
+        <section class="about-me">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis cumque libero aperiam inventore dolorum saepe asperiores, facilis eaque corporis facere odit neque soluta mollitia, corrupti sequi adipisci. Quod, quidem ratione.</p>
+            <img src="images/profile.jpg" alt="Me in the Mexico City Temple">
+        </section>
+        <h3>Mexico</h3>
+        <section class="mexico">
+            <img src="images/flag_of_mexico.jpg" alt="Flag of Mexico">
+            <p>Mexico, officially the United Mexican States, is a country in North America. Mexico covers 1,972,550 km2 (761,610 sq mi), and is the thirteenth-largest country in the world by land area, with a population exceeding 130 million. Mexico is the tenth-most populous country in the world and is home to the largest number of native Spanish speakers. Mexico City is the capital and largest city, which ranks among the most populous metropolitan areas in the world. It is also the northwesternmost country in Latin America.</p>
+        </section>
     </main>
     <aside>
-        <h2>Titulo 2</h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint vitae quisquam illo voluptates ipsam praesentium repellat totam magnam fuga maiores? Hic fuga ipsum inventore animi, omnis maxime quia quaerat reiciendis.
+        <h2>Web Dev Resources</h2>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+            <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+            <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+        </ul>
     </aside>
     <footer>
-        <span>&copy</span>
-        <span id="currentyear"></span>
-        <span>Yamsir Hernandez</span>
-        <Span>Mexico City</Span>
+        <div class="spans">
+            <span>&copy;</span>
+            <span id="currentyear"></span>
+            <span>Yamsir Hernandez</span>
+            <span>Mexico City</span>
+        </div>
+        <span id="lastModification"></span>
     </footer>
 </body>
 </html>

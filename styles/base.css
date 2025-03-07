@@ -8,8 +8,18 @@
     list-style-type: none;
 }
 
+
+h1, h2, h3, h4 {
+    color: var(--second-color);
+}
+
 a {
     text-decoration: none;
+    color: var(--second-color);
+}
+
+p {
+    color: var(--second-color);
 }
 
 
@@ -49,7 +59,6 @@ nav ul li a {
     display: block;
     text-align: center;
     padding: 10px;
-    color: var(--second-color);
 }
 
 nav ul li a:hover {
@@ -67,7 +76,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: var(--second-color);
+    background-color: var(--main-color);
     padding: 16px;
     border-radius: 8px;
     overflow: hidden;
@@ -123,6 +132,10 @@ aside ul li a {
     text-align: center;
 }
 
+aside ul li a:hover {
+    color: var(--accend-color);
+}
+
 footer {
     grid-column: span 5 / span 5;
     grid-row-start: 7;
@@ -145,4 +158,13 @@ footer {
     display: block;
     text-align: center;
     margin-top: 4px;
+}
+
+
+/* TEST */
+
+@media screen and (max-width: 600px) {
+    body {
+    background-color: red;
+    }
 }

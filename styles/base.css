@@ -11,15 +11,18 @@
 
 h1, h2, h3, h4 {
     color: var(--second-color);
+    font-family: Montserrat;
 }
 
 a {
     text-decoration: none;
     color: var(--second-color);
+    font-family: Newsreader;
 }
 
 p {
     color: var(--second-color);
+    font-family: Newsreader;
 }
 
 
@@ -36,12 +39,18 @@ body {
 header {
     grid-column: span 5 / span 5;
     background-color: var(--main-color);
+    text-align: center;
+}
+
+.name {
+    color: var(--accend-color);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    border: 1px solid var(--accend-color);
 }
 
 nav ul {
@@ -70,6 +79,7 @@ main {
     grid-row: span 5 / span 5;
     grid-row-start: 2;
     background-color: var(--main-color);
+    border: 1px solid var(--accend-color);
 }
 
 .cards {
@@ -77,9 +87,12 @@ main {
     flex-direction: column;
     width: 100%;
     background-color: var(--main-color);
-    padding: 16px;
     border-radius: 8px;
-    overflow: hidden;
+}
+
+.cards h2 {
+    text-align: center;
+    background-color: var(--accend-color);
 }
 
 .about-me {
@@ -111,6 +124,12 @@ aside {
     grid-row-start: 2;
     background-color: var(--main-color);
     text-align: center;
+    border-radius: 8px;
+    border: 1px solid var(--accend-color);
+}
+
+aside h2 {
+    background-color: var(--accend-color);
 }
 
 aside ul {
@@ -139,12 +158,12 @@ aside ul li a:hover {
 footer {
     grid-column: span 5 / span 5;
     grid-row-start: 7;
-    background-color: var(--main-color);
+    background-color: var(--accend-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 16px;
+
 }
 
 .spans {
@@ -166,5 +185,6 @@ footer {
 @media screen and (max-width: 600px) {
     body {
     background-color: red;
+
     }
 }

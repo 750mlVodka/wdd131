@@ -1,7 +1,7 @@
 :root{
-    --main-color: #263d4f;
-    --second-color: #fde4d3;
-    --accend-color: #de3f27;
+    --main-color: #dee3e4;
+    --second-color: #050505;
+    --accend-color: #0979d7;
 }
 
 * {
@@ -71,7 +71,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--accend-color);
+    font-weight: bold;
 }
 
 main {
@@ -152,7 +152,7 @@ aside ul li a {
 }
 
 aside ul li a:hover {
-    color: var(--accend-color);
+    font-weight: bold;
 }
 
 footer {
@@ -171,12 +171,14 @@ footer {
     gap: 16px;
     justify-content: center;
     align-items: center;
+    color: var(--second-color);
 }
 
 #lastModified {
     display: block;
     text-align: center;
     margin-top: 4px;
+    color: var(--second-color);
 }
 
 

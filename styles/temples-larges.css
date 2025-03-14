@@ -1,0 +1,75 @@
+:root{
+    --main-color: rgb(33, 69, 116);
+    --second-color: #f0f0f0;
+    --accend-color: #2e0366;
+}
+
+* {
+    list-style-type: none;
+}
+
+
+h1, h2, h3, h4 {
+    color: var(--second-color);
+    font-family: Montserrat;
+}
+
+a {
+    text-decoration: none;
+
+    font-family: Newsreader;
+}
+
+p {
+    color: var(--second-color);
+    font-family: Newsreader;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 8px;
+    background-color: var(--main-color);
+}
+
+header {
+    grid-column: span 5 / span 5;
+    background-color: var(--accend-color);
+    text-align: center;
+}
+
+main {
+    grid-column: span 5 / span 5;
+    grid-row: span 5 / span 5;
+    grid-row-start: 2;
+    background-color: var(--second-color);
+}
+
+footer {
+    grid-column: span 5 / span 5;
+    grid-row-start: 7;
+    background-color: var(--accend-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.spans {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    color: var(--second-color);
+}
+
+#lastModified {
+    display: block;
+    text-align: center;
+    margin-top: 4px;
+    color: var(--second-color);
+}

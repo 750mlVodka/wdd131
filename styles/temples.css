@@ -1,0 +1,26 @@
+:root{
+    --main-color: #dee3e4;
+    --second-color: #050505;
+    --accend-color: #0979d7;
+}
+
+* {
+    list-style-type: none;
+}
+
+
+h1, h2, h3, h4 {
+    color: var(--second-color);
+    font-family: Montserrat;
+}
+
+a {
+    text-decoration: none;
+    color: var(--second-color);
+    font-family: Newsreader;
+}
+
+p {
+    color: var(--second-color);
+    font-family: Newsreader;
+}

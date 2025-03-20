@@ -1,26 +1,104 @@
-:root{
+:root {
     --main-color: #dee3e4;
     --second-color: #050505;
-    --accend-color: #0979d7;
+    --accent-color: #0979d7;
 }
 
-* {
-    list-style-type: none;
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--main-color);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-
-h1, h2, h3, h4 {
-    color: var(--second-color);
-    font-family: Montserrat;
+header {
+    background-color: var(--accent-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
 }
 
-a {
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: var(--second-color);
-    font-family: Newsreader;
+    color: white;
+    font-family: 'Newsreader', serif;
+    font-size: 18px;
 }
 
-p {
-    color: var(--second-color);
-    font-family: Newsreader;
+#menuButton {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #menuButton {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: var(--accent-color);
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50px;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: white;
+    margin-top: auto;
 }

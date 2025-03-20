@@ -45,6 +45,10 @@ nav ul li a {
     font-size: 18px;
 }
 
+nav ul li a:hover{
+    font-weight: bold;
+}
+
 #menuButton {
     display: none;
     background: none;

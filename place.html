@@ -3,12 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Place</title>
+    <meta name="description" content="Place I wish to visit">
+    <meta name="author" content="Yamsir Hernandez Perez">
+    <script></script>
+    <link rel="stylesheet" href="/wdd131/styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>Place Title</header>
-    <figure class="hero">
-
-    </figure>
+    <header>Mexico</header>
+    <main>
+        <picture>
+            <source srcset="images/axolotlMobile.webp" media="(max-width: 650px)">
+            <source srcset="images/axolotl.webp" media="(min-width: 651px)">
+            <img src="images/axolotl.webp" alt="">
+        </picture>
+        <div class="sections">
+            <section class="data section">
+                <h2 >Data</h2>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+            </section>
+            <section class="weather section">
+                <h2>Weather</h2>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="spans">
+            <span>&copy;</span>
+            <span id="currentyear"></span>
+            <span>Yamsir Hernandez</span>
+            <span>Mexico City</span>
+        </div>
+        <span id="lastModified"></span>
+    </footer>
 </body>
 </html>

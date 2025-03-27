@@ -1,7 +1,7 @@
 :root {
-    --main-color: #dee3e4;
+    --main-color: #F0F0F0;
     --second-color: #050505;
-    --accent-color: #0979d7;
+    --accent-color: #054376;
 }
 
 body {
@@ -23,6 +23,10 @@ header {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
+}
+
+.homeH2 {
+    color: #050505;
 }
 
 nav ul {

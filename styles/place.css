@@ -1,3 +1,11 @@
+:root {
+    --main-color: #d21034;
+    --second-color: #007849;
+
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,11 +21,28 @@ body {
 }
 
 header {
-    background: #ccc;
+    background: var(--main-color);
     padding: 10px;
     font-size: 24px;
     font-weight: bold;
     width: 100%;
+    border-bottom:15px solid var(--second-color);
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: black;
+    margin: 15px;
+    font-size: xx-large;
+}
+
+.svg {
+    width: 40px;
+    margin: 0 auto;
+
 }
 
 main {
@@ -54,6 +79,15 @@ picture img{
     padding: 10px;
 }
 
+.dataTitle {
+    font-weight: bold;
+
+}
+
+.dataInfo {
+    font-weight: lighter;
+}
+
 .data, .weather {
     width: 100%;
 }
@@ -82,5 +116,12 @@ picture img{
         background: rgba(255, 255, 255, 0.9);
         border: 2px solid #000;
         padding: 10px;
+    }
+
+    h2 {
+        background-color: var(--second-color);
+        padding: 15px;
+        color: white;
+        text-align: start;
     }
 }

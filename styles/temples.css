@@ -18,7 +18,6 @@ header {
     color: white;
     text-align: center;
     padding: 10px;
-    position: relative;
 }
 
 h1 {
@@ -53,39 +52,55 @@ nav ul li a:hover{
     font-weight: bold;
 }
 
-#menuButton {
+.menu-btn,
+.menu-btn-hide {
     display: none;
-    background: none;
-    border: none;
-    font-size: 24px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    #menuButton {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: var(--accent-color);
-        position: absolute;
-        width: 100%;
-        left: 0;
-        top: 50px;
-        text-align: center;
-    }
-
-    nav ul.active {
+@media screen and (max-width: 650px) {
+    .menu-btn,
+    .menu-btn-hide {
         display: flex;
+        flex-direction: row;
+        align-items: end;
+        background-color: transparent;
+        cursor: pointer;
+        color: var(--main-color);
+        padding: 1rem;
     }
 
-    nav ul li {
-        padding: 10px;
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--accent-color);
+        padding: 4rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
     }
 }
 

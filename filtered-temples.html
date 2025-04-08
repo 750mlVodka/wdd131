@@ -6,8 +6,8 @@
     <title>Document</title>
     <meta name="description" content="Temples page for WDD 131 course">
     <meta name="author" content="Yamsir Hernandez">
-    <script src="/wdd131/scripts/temples.js" defer></script>
     <script src="/wdd131/scripts/getdates.js" defer></script>
+    <script src="scripts/filtered-temples.js"></script>
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +16,10 @@
 <body>
     <header>
         <h1>Temple Album</h1>
-        <button id="menuButton">☰</button>
-        <nav id="navMenu">
-            <ul>
+        <button class="menu-btn" id="show">☰</button>
+        <nav class="nav" id="nav">
+            <button class="menu-btn-hide" id="hide">✖</button>
+            <ul class="nav-list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Old</a></li>
                 <li><a href="#">New</a></li>
@@ -27,51 +28,13 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <h2 class="homeH2">Home</h2>
-        <section class="gallery">
-            <figure>
-                <img src="/wdd131/images/temple.jpg" alt="Temple of Puebla City">
-                <figcaption>Puebla Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="/wdd131/images/temple.jpg" alt="Temple of Puebla City">
-                <figcaption>Puebla Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="/wdd131/images/temple.jpg" alt="Temple of Puebla City">
-                <figcaption>Puebla Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="/wdd131/images/temple.jpg" alt="Temple of Puebla City">
-                <figcaption>Puebla Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="/wdd131/images/temple.jpg" alt="Temple of Puebla City">
-                <figcaption>Puebla Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="/wdd131/images/temple.jpg" alt="Temple of Puebla City">
-                <figcaption>Puebla Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="/wdd131/images/temple.jpg" alt="Temple of Puebla City">
-                <figcaption>Puebla Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="/wdd131/images/temple.jpg" alt="Temple of Puebla City">
-                <figcaption>Puebla Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="/wdd131/images/temple.jpg" alt="Temple of Puebla City">
-                <figcaption>Puebla Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="/wdd131/images/temple.jpg" alt="Temple of Puebla City">
-                <figcaption>Puebla Temple</figcaption>
-            </figure>
-        </section>
+        <h2>Home</h2>
+        <div class="res-grid">
+        </div>
     </main>
+
     <footer>
         <div class="spans">
             <span>&copy;</span>

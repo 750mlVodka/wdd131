@@ -102,7 +102,6 @@ const oldLink = document.querySelector("#oldTemples");
 const newLink = document.querySelector("#newTemples");
 const largeLink = document.querySelector("#largeTemples");
 const smallLink = document.querySelector("#smallTemples");
-const homeLink = document.querySelector("#homeTemples");
 
 oldLink.addEventListener("click", () => {
   const oldTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
@@ -122,10 +121,6 @@ largeLink.addEventListener("click", () => {
 smallLink.addEventListener("click", () => {
   const smallTemples = temples.filter(temple => temple.area < 10000);
   displayFilteredTemples(smallTemples);
-});
-
-homeLink.addEventListener("click", () => {
-  displayFilteredTemples(temples);
 });
 
 function displayFilteredTemples(filteredTemples) {

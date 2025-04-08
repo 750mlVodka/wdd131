@@ -1,14 +1,15 @@
+
 const nav = document.querySelector("#nav");
 const show = document.querySelector("#show");
 const hide = document.querySelector("#hide");
 
 show.addEventListener("click", () => {
   nav.classList.add("visible");
-})
+});
 
 hide.addEventListener("click", () => {
   nav.classList.remove("visible");
-})
+});
 
 
 const temples = [
@@ -97,8 +98,44 @@ const temples = [
 
 createTempleCard();
 
-function createTempleCard() {
-  temples.forEach(temple => {
+const oldLink = document.querySelector("#oldTemples");
+const newLink = document.querySelector("#newTemples");
+const largeLink = document.querySelector("#largeTemples");
+const smallLink = document.querySelector("#smallTemples");
+const homeLink = document.querySelector("#homeTemples");
+
+oldLink.addEventListener("click", () => {
+  const oldTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
+  displayFilteredTemples(oldTemples);
+});
+
+newLink.addEventListener("click", () => {
+  const newTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
+  displayFilteredTemples(newTemples);
+});
+
+largeLink.addEventListener("click", () => {
+  const largeTemples = temples.filter(temple => temple.area > 90000);
+  displayFilteredTemples(largeTemples);
+});
+
+smallLink.addEventListener("click", () => {
+  const smallTemples = temples.filter(temple => temple.area < 10000);
+  displayFilteredTemples(smallTemples);
+});
+
+homeLink.addEventListener("click", () => {
+  displayFilteredTemples(temples);
+});
+
+function displayFilteredTemples(filteredTemples) {
+const grid = document.querySelector(".res-grid");
+  grid.innerHTML = "";
+  createTempleCard(filteredTemples);
+}
+
+function createTempleCard(filteredTemples = temples) {
+  filteredTemples.forEach(temple => {
     let card = document.createElement("section");
     let name = document.createElement("h3");
     let location = document.createElement("p");

@@ -104,7 +104,7 @@ nav ul li a:hover{
     }
 }
 
-.gallery {
+.res-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
@@ -113,8 +113,15 @@ nav ul li a:hover{
     margin: auto;
 }
 
-.gallery img {
+section {
+    background-color: #dddddd;
+    text-align: center;
+}
+
+.res-grid img {
     width: 100%;
+    height: auto;
+    margin-top: 1rem;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 

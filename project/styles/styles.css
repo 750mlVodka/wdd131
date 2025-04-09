@@ -19,7 +19,8 @@ header {
 }
 
 a {
-    color: var(--contrast-color);
+    color: var(--secondary-color);
+    background-color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -44,7 +45,6 @@ p, li{
 }
 
 a {
-    color: var(--contrast-color);
     font-family: 'Prompt', sans-serif;
     text-decoration: none;
     font-weight: bold;

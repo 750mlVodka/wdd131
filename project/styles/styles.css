@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #8ad7ee;
+    --text-color: #061318;
+    --contrast-color: #f78424;
+}
+
+body {
+    margin: 0;
+    background-color: var(--secondary-color);
+}
+
+header {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: var(--text-color);
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--contrast-color);
+    color: var(--primary-color);
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}

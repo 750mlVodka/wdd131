@@ -27,24 +27,27 @@ const products = [
 ];
 
 const selectElement = document.getElementById("productName");
-
-products.forEach(product => {
-    const option = document.createElement("option");
-    option.value = product.name;
-    option.textContent = product.name;
-    selectElement.appendChild(option);
-})
-
-
-let count = localStorage.getItem("reviewCount")
-if (!count) {
-    count =0;
+if (selectElement){
+    products.forEach(product => {
+        const option = document.createElement("option");
+        option.value = product.name;
+        option.textContent = product.name;
+        selectElement.appendChild(option);
+    })
 }
 
-count = parseInt(count) + 1;
-localStorage.setItem("reviewCount", count);
 
-const counterElement = document.getElementById("counter");
-if (counterElement) {
-    counterElement.textContent = count;
-}
+
+// Counter
+let count = localStorage.getItem("reviewCount");
+    if (!count) {
+        count = 0;
+    }
+
+    count = parseInt(count) + 1;
+    localStorage.setItem("reviewCount", count);
+
+    const counterElement = document.getElementById("counter");
+    if (counterElement) {
+        counterElement.textContent = count;
+    }

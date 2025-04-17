@@ -34,3 +34,17 @@ products.forEach(product => {
     option.textContent = product.name;
     selectElement.appendChild(option);
 })
+
+
+let count = localStorage.getItem("reviewCount")
+if (!count) {
+    count =0;
+}
+
+count = parseInt(count) + 1;
+localStorage.setItem("reviewCount", count);
+
+const counterElement = document.getElementById("counter");
+if (counterElement) {
+    counterElement.textContent = count;
+}

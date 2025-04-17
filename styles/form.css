@@ -75,3 +75,16 @@ fieldset {
     padding: 1rem;
     border: none;
 }
+
+footer {
+    background-color: var(--primary-color);
+    padding: 25px;
+    margin-top: 1rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.name::after,
+.name::before {
+    content: "🥝";
+}

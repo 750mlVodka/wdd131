@@ -14,3 +14,15 @@ function displayExperience() {
     });
 }
 displayExperience();
+
+const nav = document.querySelector("#nav");
+const show = document.querySelector("#show");
+const hide = document.querySelector("#hide");
+
+show.addEventListener("click", () => {
+    nav.classList.add("visible");
+});
+
+hide.addEventListener("click", () => {
+    nav.classList.remove("visible");
+});

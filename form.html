@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="Yamsir Hernandez">
+    <meta name="description" content="Product review form page">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="scripts/form.js">
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+            <label for="productName">Product Name</label>
+            <select name="productName" id="productName">
+                <option value="" disabled selected></option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <label><input type="radio" name="rating" value="1">&#11088</label>
+                <label><input type="radio" name="rating" value="2">&#11088&#11088</label>
+                <label><input type="radio" name="rating" value="3">&#11088&#11088&#11088</label>
+                <label><input type="radio" name="rating" value="4">&#11088&#11088&#11088&#11088</label>
+                <label><input type="radio" name="rating" value="5">&#11088&#11088&#11088&#11088&#11088</label>
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+</html>

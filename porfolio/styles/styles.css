@@ -155,3 +155,26 @@ h1, h2, h3 {
 p {
     margin: 0 0 1rem 0;
 }
+
+
+/* // Projects section // */
+
+#projects {
+    margin-top: 2rem;
+}
+
+#project h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--primary-color);
+    border-radius: 12px;
+}

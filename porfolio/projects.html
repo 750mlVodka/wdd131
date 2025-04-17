@@ -6,6 +6,7 @@
     <title>Yamsir | Portfolio</title>
     <meta name="description" content="Yamsir's portfolio showcasing web development projects.">
     <meta name="author" content="Yamsir">
+    <script src="scripts/script.js" defer></script>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,15 +15,17 @@
 </head>
 <body>
     <header>
-        <h1>Yamsir's Portfolio</h1>
+        <h1>Projects</h1>
+        <button id="show" class="menu-btn">&#x2630;</button>
+        <nav class="nav" id="nav">
+            <button id="hide" class="menu-btn-hide">&#x2613;</button>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
     <main>
         <section id="projects">
             <h2>Projects</h2>

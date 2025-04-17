@@ -37,19 +37,19 @@
             <label for="installDate">Date of Isntalation</label>
             <input type="date" name="installDate" id="installDate" required>
 
-            <fieldset>
+            <fieldset class="checkboxes">
                 <legend>Wich features did you find usefull in the product?</legend>
-                <label for="durability"><input type="checkbox" name="features" id="durability" value="Durability">Durability</label>
-                <label for="easeOfUse"><input type="checkbox" name="features" id="easeOfUse" value="Ease of use">Ease of use</label>
-                <label for="performance"><input type="checkbox" name="features" id="performance" value="Performance">Performance</label>
-                <label for="design"><input type="checkbox" name="features" id="design" value="Design">Design</label>
+                <label><input type="checkbox" name="features" id="durability" value="Durability">Durability</label>
+                <label><input type="checkbox" name="features" id="easeOfUse" value="Ease of use">Ease of use</label>
+                <label><input type="checkbox" name="features" id="performance" value="Performance">Performance</label>
+                <label><input type="checkbox" name="features" id="design" value="Design">Design</label>
             </fieldset>
 
             <label for="review">Written Review (Optional)</label>
             <textarea name="review" id="review" ></textarea>
 
             <label for="userName">Your Name (Optional)</label>
-            <textarea name="userName" id="userName"></textarea>
+            <input type="text" name="userName" id="userName"></input>
 
             <input type="submit" value="Post Review" id="submitReview">
         </form>

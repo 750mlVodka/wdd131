@@ -6,6 +6,7 @@
     <title>Yamsir | Portfolio</title>
     <meta name="description" content="Yamsir's portfolio showcasing web development projects.">
     <meta name="author" content="Yamsir">
+    <script src="/wdd131/scripts/getdates.js" defer></script>
     <script src="scripts/script.js" defer></script>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,8 +60,13 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Yamsir</p>
-        <p>All rights reserved.</p>
+        <div class="spans">
+            <span>&copy;</span>
+            <span id="currentyear"></span>
+            <span class="name">Yamsir Hernandez</span>
+            <span>Mexico City</span>
+        </div>
+        <span id="lastModified"></span>
     </footer>
 </body>
 </html>

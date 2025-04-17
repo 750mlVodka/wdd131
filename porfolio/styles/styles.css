@@ -217,3 +217,20 @@ p {
     background-color: var(--contrast-color);
     padding: 0.5rem 3rem;
 }
+
+
+
+/* // Footer //  */
+
+footer {
+    background-color: var(--contrast-color);
+    padding: 25px;
+    margin-top: 1rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.name::after,
+.name::before {
+    content: "🥝";
+}

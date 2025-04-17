@@ -78,6 +78,16 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
 }
 
+.experience ul{
+    list-style: none;
+    padding: 0;
+}
+
+.experience ul li {
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
 h1, h2, h3 {
     margin: 0 0 1rem;
 }
